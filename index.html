@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio | Gabuya Designs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #17271A;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: #3F3B36 !important;
+        }
+
+        .navbar-brand img {
+                          width: 300px; /* Adjust the width as needed */
+              height: 150px;
+            image-rendering: pixelated;
+        }
+
+        header {
+            background-color: linear-gradient(to right, #625B07 15%, #F48347 70%);
+            color: #ffffff;
+            text-align: center;
+            padding: 25Spx 10px; /* Adjusted padding */
+            position: relative;
+        }.nav-link {
+    text-decoration: none;
+    padding: 20px 30px;
+    color: #333; 
+    border-radius: 8px; /* Increased border radius for a softer look */
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+    font-size: 1.2rem; /* Adjust the font size */
+}
+
+/* Hover effect */
+.nav-link:hover {
+    background: #1A1B1F;
+    transform: scale(1.05);
+}
+
+/* Active link style */
+.nav-link.active {
+    
+}
+
+/* Bootstrap icon styles */
+.nav-link i {
+    margin-right: 10px;
+    font-size: 1.8rem; /* Adjust the icon size */
+}
+
+
+        .nav-link {
+            color: #ffffff !important;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-link:hover {
+            color: #f8f9fa !important;
+        }/* Resetting default list styles */
+
+
+        .social-icons a {
+            color: #ffffff;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover {
+            color: #f8f9fa;
+        }
+
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80%;
+            height: 80%;
+            background: linear-gradient(45deg, #212529, #343a40);
+            opacity: 0.8;
+            z-index: -1;
+        }
+
+        header h1 {
+            font-size: 2rem; /* Reduced font size */
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .color-overlay {
+            background: linear-gradient(to right, #82756D 15%, #6C5848 70%);
+            padding: 10px; /* Adjusted padding */
+            border-radius: 10px;
+        }
+
+        main {
+            padding: 10px 0; 
+        }
+
+        main img {
+            max-width: 120%;
+            height: 100%;
+            border-radius: 10px;
+            animation: scaleIn 1s ease-in-out;
+            margin-bottom: 10px; 
+        }
+
+        main h2 {
+            font-size: 1.5rem; 
+            margin-top: 10px; 
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        main p {
+            font-size: 1rem; 
+            line-height: 1.4; 
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 10px 0; 
+        }
+
+        footer a {
+            color: #ffffff;
+            transition: color 0.3s ease-in-out;
+            margin-right: 10px; 
+        }
+
+        footer a:hover {
+            color: #f8f9fa;
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid px-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/Gabuya2.png" width="225" height="75" alt="logo for Jon Smith Designs">
+                    <span class="d-none">Gabuya Designs</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="portfolio.html" class="nav-link">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <header>
+            <div class="color-overlay d-flex justify-content-center align-items-center">
+                <h1 class="animate__animated animate__fadeInUp">Dynamic • Versatile • Adventurous</h1>
+            </div>
+        </header>
+
+        <div class="container my-5 text-center">
+            <!-- Add your image here -->
+            <img src="images/1234.png" alt="Your Image" class="img-fluid mb-4 animate__animated animate__scaleIn" style="width: 80%; height: 80%;">
+
+            <h2 class="text-center animate__animated animate__fadeIn"style="color: white;">Wanderlust in Code: Life as a Traveling Student Programmer</h2>
+            <p class="lead"style="color: #F5F0EA;">
+               As a student programmer with a dream that extends beyond lines of code, I yearn for the open road. Equipped with a laptop and a spirit of adventure, I navigate not only through complex algorithms but also through uncharted landscapes. Join me in this fusion of coding and wanderlust, where every line written tells a story of a journey well-earned.
+            </p>
+        </div>
+    </main>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
+    <script>
+        // Add your custom JavaScript here
+    </script>
+</body>
+
+</html>
+
